@@ -1,0 +1,2 @@
+# color-generator
+Generates colors
