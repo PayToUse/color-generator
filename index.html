@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Color Generator</title>
+</head>
+<body onload="genColor()">
+    <h1 id="title">CSS Color Generator v1</h1>
+    <p>generates colors in one click</p>
+    <div id="container">
+        <p>HEX Color</p>
+        <div id="hex">
+            <p id="hexcolor">#000000</p>
+        </div>
+        <hr>
+        <p>RGB Color</p>
+        <div id="rgb">
+            <p id="rgbcolor">rgb(0, 0, 0)</p>
+        </div>
+        <hr>
+        <p>CSS Color</p>
+        <div id="colr">
+            <p id="colrcolor">NaN</p>
+        </div>
+        <hr>
+        <p>HSL Color</p>
+        <div id="hsl">
+            <p id="hslcolor">hsl(0, 0%, 0%)</p>
+        </div>
+    </div>
+    <a onclick="genColor()">click here to generate again</a>
+    <p>
+        Louie Kurenai @ 2023
+    </p>
+</body>
+</html>
