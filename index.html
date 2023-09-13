@@ -8,12 +8,17 @@
     <title>Color Generator</title>
 </head>
 <body onload="genColor()">
-    <h1 id="title">CSS Color Generator v1</h1>
-    <p>generates colors in one click</p>
+    <h1 id="title">CSS Color Generator v2</h1>
+    <p>generates colors in just a single click</p>
     <div id="container">
         <p>HEX Color</p>
         <div id="hex">
             <p id="hexcolor">#000000</p>
+        </div>
+        <hr>
+        <p>HEXA Color</p>
+        <div id="hexa">
+            <p id="hexacolor">#00000000</p>
         </div>
         <hr>
         <p>RGB Color</p>
@@ -21,7 +26,12 @@
             <p id="rgbcolor">rgb(0, 0, 0)</p>
         </div>
         <hr>
-        <p>CSS Color</p>
+        <p>RGBA Color</p>
+        <div id="rgba">
+            <p id="rgbacolor">rgba(0, 0, 0, 0)</p>
+        </div>
+        <hr>
+        <p>Predefined Color</p>
         <div id="colr">
             <p id="colrcolor">NaN</p>
         </div>
@@ -30,8 +40,13 @@
         <div id="hsl">
             <p id="hslcolor">hsl(0, 0%, 0%)</p>
         </div>
+        <hr>
+        <p>HSLA Color</p>
+        <div id="hsla">
+            <p id="hslacolor">hsl(0, 0%, 0%)</p>
+        </div>
     </div>
-    <a onclick="genColor()">click here to generate again</a>
+    <a onclick="genColor()">you may click here to generate again</a>
     <p>
         Louie Kurenai @ 2023
     </p>

@@ -14,9 +14,16 @@ div {
 p {
     color: #000000;
 }
+hr {
+    border: 1px solid #000000;
+    border-radius: 100px;
+}
 #container {
     padding: 15px;
     margin: 15px;
+}
+#container hr {
+    width: 100%;
 }
 #container div {
     padding: 15px;
@@ -34,14 +41,25 @@ p {
 #hex p {
     color: #FFFFFF;
 }
+#hexa p {
+    color: #FFFFFF;
+}
 #rgb p {
     color: #FFFFFF;
+}
+#rgba p {
+    color: #FFFFFF;
+    font-size: 10pt;
 }
 #colr p {
     color: #FFFFFF;
 }
 #hsl p {
     color: #FFFFFF;
+}
+#hsla p {
+    color: #FFFFFF;
+    font-size: 10pt;
 }
 a {
     color: #000080;
