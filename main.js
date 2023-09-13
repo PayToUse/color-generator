@@ -74,4 +74,6 @@ function genColor() {
     
     document.getElementById("hslacolor").innerHTML = hsla;
     document.getElementById("hsla").style.backgroundColor = hsla;
+
+    // end of function...
 }
