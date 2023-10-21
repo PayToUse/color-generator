@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Scripts -->
     <script src="main.js"></script>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    
     <title>Color Generator</title>
 </head>
-<body onload="genColor()">
-    <h1 id="title">CSS Color Generator v2</h1>
+<body onload="preGenerateColors(), genColor()">
+  <div id="main-container">
+    <h1 id="title">CSS Color Generator v3</h1>
     <p>generates colors in just a single click</p>
     <div id="container">
         <p>HEX Color</p>
@@ -16,7 +25,7 @@
             <p id="hexcolor">#000000</p>
         </div>
         <hr>
-        <p>HEXA Color</p>
+        <p>HEX with Alpha Color</p>
         <div id="hexa">
             <p id="hexacolor">#00000000</p>
         </div>
@@ -26,29 +35,35 @@
             <p id="rgbcolor">rgb(0, 0, 0)</p>
         </div>
         <hr>
-        <p>RGBA Color</p>
+        <p>RGB with Alpha Color</p>
         <div id="rgba">
             <p id="rgbacolor">rgba(0, 0, 0, 0)</p>
         </div>
         <hr>
-        <p>Predefined Color</p>
+        <p>CSS Pre-defined Color</p>
         <div id="colr">
             <p id="colrcolor">NaN</p>
         </div>
         <hr>
-        <p>HSL Color</p>
+        <p>Hue, Saturation and Lightness Color</p>
         <div id="hsl">
             <p id="hslcolor">hsl(0, 0%, 0%)</p>
         </div>
         <hr>
-        <p>HSLA Color</p>
+        <p>Hue, Saturation, and Lightness with Alpha Color</p>
         <div id="hsla">
             <p id="hslacolor">hsl(0, 0%, 0%)</p>
         </div>
     </div>
-    <a onclick="genColor()">you may click here to generate again</a>
-    <p>
-        Louie Kurenai @ 2023
-    </p>
+    <p>To generate colors again:</p>
+    <a onclick="genColor()">you can click here to regenerate colors again</a>
+    <br>
+    <br>
+    <a onclick="preGenerateColors()">or you can click here to regenerate colors ten times</a>
+    <br>
+    <br>
+    <a href="script.js" download>Get the script</a>
+    <p id="creator"></p>
+  </div>
 </body>
 </html>

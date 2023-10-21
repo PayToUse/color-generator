@@ -6,6 +6,7 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
+    animation: rgbDark 2.5s infinite alternate linear;
 }
 div {
     border: 1px solid #000000;
@@ -21,49 +22,66 @@ hr {
 #container {
     padding: 15px;
     margin: 15px;
+    background-color: #FFFFFF;
+}
+#main-container {
+  background-color: #FFFFFFBF;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
 }
 #container hr {
     width: 100%;
 }
 #container div {
     padding: 15px;
-    margin: 15px;
+    margin: 7.5px;
     font-size: 12pt;
 }
 #container p {
     color: #000000;
 }
 #title {
-    font-family: 'Courier New', Courier, monospace;
     color: #FFFFFF;
-    animation: rgb 5s infinite alternate linear;
+    animation: rgb 7.5s infinite alternate linear;
+    font-weight: 1000;
+    font-family: "Mooli";
 }
 #hex p {
     color: #FFFFFF;
+    font-family: "Mooli";
 }
 #hexa p {
     color: #FFFFFF;
+    font-family: "Mooli";
 }
 #rgb p {
     color: #FFFFFF;
+    font-family: "Mooli";
 }
 #rgba p {
     color: #FFFFFF;
-    font-size: 10pt;
+    font-family: "Mooli";
 }
 #colr p {
     color: #FFFFFF;
+    font-family: "Mooli";
 }
 #hsl p {
     color: #FFFFFF;
+    font-family: "Mooli";
 }
 #hsla p {
     color: #FFFFFF;
-    font-size: 10pt;
+    font-family: "Mooli";
+}
+#creator {
+  opacity: 0.5;
 }
 a {
     color: #000080;
     padding: 10px;
+    text-decoration: none;
 }
 @keyframes rgb {
     0% {
@@ -81,5 +99,19 @@ a {
     100% {
         color: #FF0000;
         text-shadow: 0px 2px 10px #FF0000;
+    }
+}
+@keyframes rgbDark {
+    0% {
+        background-color: #FF8080;
+    }
+    33% {
+        background-color: #80FF80;
+    }
+    66% {
+        background-color: #8080FF;
+    }
+    100% {
+        background-color: #FF8080;
     }
 }

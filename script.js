@@ -77,32 +77,3 @@ function genColor() {
 
   // end of function...
 }
-
-// pre-generate colors ten times at the start
-function preGenerateColors() {
-  setTimeout(genColor, 125);
-  setTimeout(genColor, 250);
-  setTimeout(genColor, 375);
-  setTimeout(genColor, 500);
-  setTimeout(genColor, 625);
-  setTimeout(genColor, 750);
-  setTimeout(genColor, 875);
-  setTimeout(genColor, 1000);
-  setTimeout(genColor, 1125);
-  setTimeout(genColor, 1250);
-}
-
-// display the creator's name with the year synced at the time
-function displayCreator() {
-  var date = new Date();
-  var year = date.getFullYear();
-  var display = document.getElementById("creator");
-  
-  if (year > 2023) {
-    display.innerHTML = "Louie Kurenai @ 2023 - " + year;
-  } else {
-    display.innerHTML = "Louie Kurenai @ " + year
-  }
-}
-
-setInterval(displayCreator, 1);
